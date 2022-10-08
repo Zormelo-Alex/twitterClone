@@ -1,36 +1,29 @@
 const express = require("express");
 const app = express();
 const mongoose = require("mongoose")
-const bodyPaser = require("body-parser");
-const passport = require("passport")
-const localStrategy = require("passport-local")
-//const expressSession = require("express-session")
-const Users = require("./models/users")
-const authentication = require("./routes/authentication");
+const expressSession = require("express-session")
+const authentication = require("./src/routes/authentication");
 const seed = require("./seedDb");
 
-seed();
-mongoose.connect("mongodb://localhost/twitterclone").then(res=>{
+//seed();
+mongoose.connect("mongodb://localhost:27017/twitterclone").then(res=>{
     console.log("Database connected suc''''''")
-}).catch(err=>{
+}).catch((err)=>{
     console.log(err);
 });
 
 
 
-app.use(express.static("public"));
+app.use(express.static("src"));
 app.set("view engine", "ejs");
-app.use(bodyPaser.urlencoded({extended:true}));
-app.use(require("express-session")({
+app.use(express.urlencoded());
+app.use(express.json());
+app.use(expressSession({
     secret: "DOM",
     resave: false,
     saveUninitialized: false
 }));
-app.use(passport.initialize())
-app.use(passport.session())
-passport.use(new localStrategy(Users.authenticate()))
-passport.serializeUser(Users.serializeUser())
-passport.deserializeUser(Users.deserializeUser())
+
 
 
 

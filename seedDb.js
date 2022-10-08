@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-const Users = require("./models/users")
+const Users = require("./src/models/users")
 
 
 

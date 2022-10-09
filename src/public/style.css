@@ -4,6 +4,130 @@
     box-sizing: border-box;
 }
 body{
-    background-color: rgb(39, 38, 38);
+    background-color: #14171A;
     color: white;
+    height: 100vh;
+    width: 100vw;
+}
+.container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.index-container{
+    width: 100%;
+    height: 100%;
+    display: flex;    
+}
+.index-container .left{
+    width: 40%;
+    height: 90%;
+}
+.index-container .left img{
+    height: 100%;
+    width: 100%;
+}
+.index-container .right{
+    padding: 5rem 2rem;
+    width: 60%;
+    
+}
+.preloader{
+    height: 100%;
+    width: 100%;
+    background-color: #14171A;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+.preloader i{
+    color:  #1DA1F2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    font-size: 7rem;
+}
+.login-container{
+    background-color: black;
+    height: 90%;
+    width: 48%;
+    border-radius: 17px;
+    padding: 20px;
+}
+.login-container .top{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+.login-container .top i{
+    color: #F5F8FA;
+    font-size: 2rem;
+}
+.login-container .top .close{
+    font-size: 1rem;
+}
+.login-main{
+    padding: 2rem 9rem;
+}
+.login-main h4{
+    font-weight: bolder;
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+}
+.login-main form{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4rem;
+}
+.login-main form input{
+    margin-bottom: 1.5rem;
+    background-color: transparent;
+    border: 1px solid gray;
+    padding: 20px 8px;
+    border-radius: 5px;
+    color: grey;
+    font-size: 1rem;
+    transition: all .3s ease;
+}
+.login-main form input:focus{
+    outline: 1.3px solid #1DA1F2;
+}
+.login-main form .sbmt{
+    background-color: #F5F8FA;
+    padding: 9px 8px;
+    border-radius: 5rem;
+    color: #191d20;
+    font-weight: 500;
+    cursor: pointer;
+}
+.login-main .fp{
+    border-radius: 5rem;
+    font-weight: 700;
+    font-size: large;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    border: .5px solid #c7c9ca;
+    color: #F5F8FA;
+    padding: 9px 8px;
+    transition: all .5s ease;
+}
+.login-main .fp:hover{
+    background-color: #f5f8fa4d;
+}
+.login-main p{
+    color: #828485;
+    font-size: 1.1rem;
+}
+.login-main p a{
+    color: #1DA1F2;
+    text-decoration: none;
+}
+.login-main p a:hover{
+    text-decoration: underline;
 }

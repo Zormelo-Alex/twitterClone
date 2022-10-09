@@ -3,13 +3,14 @@ const router = Router()
 const Users = require("../models/users")
 
 
+
 router.get("/", (req, res)=>{
-    res.redirect("/register");
+    if(!req.session.user) return res.redirect("/twitter/register")
+    res.render("home")
 })
 
-router.get("/twitter", (req, res)=>{
-    if(!req.session.user) return res.status(401).send("Please log in first!")
-    res.render("home")
+router.get("/signup", (req, res)=>{
+    res.render("index");
 })
 
 router.get("/register", (req, res)=>{

@@ -25,9 +25,11 @@ app.use(expressSession({
 }));
 
 
+app.get("/", (req, res)=>{
+    res.redirect("/twitter")
+})
 
-
-app.use(authentication)
+app.use( "/twitter", authentication)
 
 
 

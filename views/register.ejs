@@ -1,12 +1,27 @@
 <%- include("./partials/header.ejs") -%> 
+<div class="preloader">
+    <i class="fa-brands fa-twitter"></i>
+</div>
+    <div class="container">
+        <div class="login-container">
+            <div class="top">
+                <a href="/twitter/signup"><i class="fa-regular fa-xmark close"></i></a>
+                <i class="fa-brands fa-twitter"></i>
+            </div>
+            <div class="login-main">
+                <h4>Create a new account</h4>
+                <form action="/twitter/register" method="post">
+                    <input type="text" name="name" placeholder="Username" required>
+                    <input type="email" name="email" placeholder="enter your email address" required>
+                    <input type="password" name="password" placeholder="Password" required>
+                    <input class="sbmt" type="submit" value="Next">
+                </form>
+                
+                <p>already have an account? <a href="/twitter/login">Login</a></p>
+            </div>
+        </div>
+    </div>
+        
 
-<body>
-    <form action="/register" method="post">
-        <input type="text" name="name" placeholder="Username" required>
-        <input type="email" name="email" placeholder="enter your email address" required>
-        <input type="password" name="password" placeholder="Password" required>
-        <input type="submit" value="done">
-    </form>
-    <h4>already have an account? <a href="/login">Login</a></h4>
-</body>
-</html>
+
+<%- include("./partials/footer.ejs") -%>

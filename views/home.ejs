@@ -1,11 +1,124 @@
 <%- include("./partials/header.ejs") -%>
  
 
-    <% //users.forEach((user)=>{ %>
-        <h1>Welcome to Twiter <%=// user.username %> </h1>
-    <% //}) %> 
-
-    <a href="/">back</a>
+    <div class="frontpage">
+        <div class="container">
+            <section class="sidenav">
+                <div class="fronttop">
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+                <div class="navlist">
+                    <ul>
+                        <li>
+                            <a href=""><i></i>Home</a>
+                        </li>
+                        <li>
+                            <a href=""><i></i>Explore</a>
+                        </li>
+                        <li>
+                            <a href=""><i></i>Notifications</a>
+                        </li>
+                        <li>
+                            <a href=""><i></i>Messages</a>
+                        </li>
+                        <li>
+                            <a href=""><i></i>Bookmarks</a>
+                        </li>
+                        <li>
+                            <a href=""><i></i>Lists</a>
+                        </li>
+                        <li>
+                            <a href=""><i></i>Profile</a>
+                        </li>
+                        <li>
+                            <a href=""><i></i>More</a>
+                        </li>
+                    </ul>
+                    <a href="">Tweet</a>
+                </div>
+                <div class="userdeets">
+                    <div class="image">
+                        <img src="" alt="profile picha">
+                    </div>
+                    <div class="name">
+                        <div class="first"></div>
+                        <div class="second"></div>
+                    </div>
+                    <div class="dots">
+                        <i></i>
+                    </div>  
+                </div>
+            </section>
+            <section class="middle">
+                <div class="top">
+                    <div class="frontop">
+                        <h4>Home</h4>
+                        <i></i>
+                    </div>
+                    <div class="below">
+                        <form action="">
+                            <div class="top">
+                                <div class="pp">
+                                    <img src="" alt="profile picha">
+                                </div>
+                                <div class="ins">
+                                    <input type="text" placeholder="What's happening?">
+                                </div>
+                            </div>
+                            <div class="below">
+                                <div class="icons">
+                                    <i></i>
+                                    <i></i>
+                                    <i></i>
+                                    <i></i>
+                                    <i></i>
+                                    <i></i>
+                                </div>
+                                <div class="sbmt">
+                                    <input type="submit" value="Tweet">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="below">
+                    <h4>Show 2 Tweets</h4>
+                </div>
+                <div class="twitternoti">
+                    <div class="options"><i></i></div>
+                    <div class="header"><h4>Help make Twitter more accessible</h4></div>
+                    <div class="text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi sit, dolorem minima neque deserunt nihil quia corrupti recusandae? Nulla impedit suscipit exercitationem minima provident veniam libero itaque totam dolorum atque?</p>
+                    </div>
+                    <div class="butn">
+                        <button>Turn on reminder</button>
+                    </div>
+                </div>
+                <div class="posts">
+                    <div class="userpp">
+                        <img src="" alt="profile picha">
+                    </div>
+                    <div class="post">
+                        <div class="postinfo">
+                            <div class="username">
+                                <h5>Dom</h5>
+                                <h6>@dodzi</h6>
+                            </div>
+                            <div class="options">
+                                <i></i>
+                            </div>
+                        </div>
+                        <div class="text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat recusandae aperiam culpa ullam fuga obcaecati est assumenda officiis eveniet soluta nostrum beatae, quia quis illum blanditiis dolorem unde tempore mollitia.
+                        </div>
+                        <div class="image">
+                            <img src="" alt="post image">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
     
 
 <%- include("./partials/footer.ejs") -%>

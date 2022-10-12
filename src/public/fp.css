@@ -1,0 +1,34 @@
+.frontpage{
+   padding: 5px; 
+}
+.container{
+    height: 100%;
+    align-items: unset;
+}
+.sidenav{
+    width: 25%;
+    position: sticky;
+    padding: 1rem 4rem;
+    border-right: .5px solid #c7c9ca;
+}
+.sidenav .front-top{
+    padding-bottom: 2rem;
+}
+.sidenav .front-top i{
+    font-size: 2rem;
+    color: #c7c9ca;
+}
+.sidenav .navlist ul li{
+    list-style: none;
+}
+.sidenav .navlist ul li a{
+    text-decoration: none;
+    color: #c7c9ca;
+    font-size: 1.3rem;
+}
+.middle{
+    width: 50%;
+}
+.right{
+    width: 25%;
+}

@@ -7,9 +7,12 @@ body{
     background-color: #14171A;
     color: white;
 }
+i{
+    color: #F5F8FA;
+}
 .container{
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;

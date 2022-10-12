@@ -36,8 +36,8 @@ router.post("/login", async (req, res)=>{
     const {email, password} = req.body
     if(!email || !password) return res.status(400).send("Please fill in all textboxes!");
     const userDB = await Users.findOne({$or: [{email:email}, {username:email}]})
-    const comparePassword = compare(password, userDB.password)
     if(!userDB) return res.status(400).send("Sorry username or email incorrect")
+    const comparePassword = compare(password, userDB.password)
     if(!comparePassword) return res.status(401).send("password incorrect!");
     req.session.user = {email: userDB.email}
     res.render("home")
